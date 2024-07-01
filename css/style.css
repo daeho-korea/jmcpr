@@ -846,6 +846,9 @@ legend,
 .bg-17 {
   background: #17192C;
 }
+.bg-20 {
+  background: #202021;
+}
 .bg-21 {
   background: #21ccf41a;
 }
@@ -5785,6 +5788,9 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     
   }
+}
+.logo-main {
+  transform: rotate(-90deg);
 }
 .nowrap {
   white-space: nowrap;
