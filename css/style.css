@@ -521,6 +521,9 @@ legend,
 .ml12 {
   margin-left: 1.2rem;
 }
+.ml30 {
+  margin-left: 3rem;
+}
 .ml32 {
   margin-left: 3.2rem;
 }
@@ -543,6 +546,9 @@ legend,
 }
 .pr12 {
   padding-right: 1.2rem;
+}
+.pr20 {
+  padding-right: 2rem;
 }
 .pl54 {
   padding-left: 5.4rem;
@@ -1483,11 +1489,14 @@ button {
   display: block;
   text-align: center;
   padding: 1.4rem 2.0rem;
-  background: #678394;
+  background: #FA4149;
   color: var(--white);
   font-size: 1.6rem;
   font-weight: 700;
-  border-radius: 1.0rem;
+  &.off {
+    background: #4A4C4D;
+    color: var(--white);
+  }
 }
 .btn__num {
   display: none;
@@ -2110,6 +2119,9 @@ button {
   color: var(--black);
   font-size: 1.6rem;
   font-weight: 700;
+  &.white {
+    color: var(--white);
+  }
   &.gray {
     color: rgba(0, 0, 0, 0.70) !important;
   }
@@ -5522,6 +5534,16 @@ input[type="number"]::-webkit-inner-spin-button {
     &.mw800 {
       min-width: 800px;
     }
+    &.max390 {
+      max-width: 390px;
+    }
+   
+  }
+  &.w30 {
+    & img {
+      display: block;
+      width: 30% !important;
+    }
   }
 }
 .background {
@@ -5885,6 +5907,6 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   & header {
     width: 100%;
-    background: white;
+    /* background: white; */
   }
 }

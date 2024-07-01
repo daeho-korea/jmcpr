@@ -53,8 +53,8 @@
     <div class="landscape-cont">
       <nav class="nav-landscape">
         <ul >
-          <li class="nav1 active" onclick="location.href='home.html'">VR홈</li>
-          <li class="nav2" onclick="location.href='connection.html'">기기연결</li>
+          <li class="nav1" onclick="location.href='home.html'">VR홈</li>
+          <li class="nav2 active" onclick="location.href='connection.html'">기기연결</li>
           <li class="nav3" onclick="alert('준비중입니다')">찜목록</li>
           <li class="nav4" onclick="location.href='list.html'">학습 내역</li>
           <li class="nav5" onclick="alert('준비중입니다')">설정</li>
@@ -63,13 +63,17 @@
       <div class="landscape-wrap pt40 px54">
         <header>
           <div class="align triple both">
-            <a class="w-24" href=""><img src="images/ico_back.svg" alt=""></a>
-            <div class="text-type4">헤드셋 선택</div>
+            <a class="w-24" href="javascript:window.history.back();"><img src="images/ico_back.svg" alt=""></a>
+            <div class="text-type4 white fz20">헤드셋 선택</div>
             <div class="w-24"></div>
           </div>
         </header>
-        <div class="img-wrap2 pt30">
-          <img class="mw800" src="images/@img_cpr1.png" alt="">
+        <div class="img-wrap2 pt30 scroll-x" onclick="location.href='home.html'">
+          <img class="mw800" src="images/@img_cpr2.png" alt="">
+        </div>
+        <div class="align right pr20 pt20">
+          <button class="btn-main-on off" type="button" onclick="alert('준비중입니다')">건너뛰기</button>
+          <button class="btn-main-on ml10" type="button" onclick="location.href='connection2.html'">계속하기</button>
         </div>
       </div>
 
