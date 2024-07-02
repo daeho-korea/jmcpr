@@ -5693,6 +5693,9 @@ input[type="number"]::-webkit-inner-spin-button {
   background: var(--white);
   border-radius: 10px;
   overflow: hidden;
+  &.active {
+    display: block;
+  }
   & button {
     width: 100%;
     background: var(--white);

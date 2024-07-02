@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <script src="js/common.js" defer></script>
     <style>
       @media( orientation: portrait ){
         html {
@@ -55,38 +56,31 @@
         <ul >
           <li class="nav1 active" onclick="location.href='home.html'">VR홈</li>
           <li class="nav2" onclick="location.href='connection.html'">기기연결</li>
-          <li class="nav3" onclick="alert('준비중입니다')">찜목록</li>
+          <li class="nav3 alert">찜목록</li>
           <li class="nav4" onclick="location.href='list.html'">학습 내역</li>
-          <li class="nav5" onclick="alert('준비중입니다')">설정</li>
+          <li class="nav5 alert">설정</li>
         </ul>
       </nav>
       <div class="landscape-wrap pt40 px54">
-        <input class="ico-mag" type="text" placeholder="검색하세요" onclick="alert('준비중입니다')">
-        <div class="img-wrap2 pt30 scroll-x" onclick="alert('준비중입니다')">
+        <input class="ico-mag alert" type="text" placeholder="검색하세요" >
+        <div class="img-wrap2 pt30 scroll-x alert">
           <img class="mw800" src="images/@img_cpr1.png" alt="">
         </div>
       </div>
 
     </div>
+    <div class="layer"></div>
+    <div class="modal-1">
+      <div class="text-type4 fz16 fw400 lh155 txt-center pt50 pb50 border-bottom">
+        준비중입니다
+      </div>
+      <div class="align both">
+        <!-- <button type="button" id="btnYes">확인</button> -->
+        <button type="button" id="btnNo">확인</button>
+      </div>
+    </div>    
 
-    <script>
-      $(document).ready(function() {
-        $('.btn-guide').click(function(event) {
-          event.preventDefault();  // 기본 동작 방지
-          $('.modal-2').show();
-          $('.layer').show();
-        });
-        $('.modal-2').click(function(event) {
-          $('.layer').hide();
-          $('.modal-2').hide();
-        });
-      });
-      window.addEventListener("orientationchange", function() {
-        if (window.matchMedia("(orientation: landscape)").matches) {
-          alert("Please rotate your device to portrait mode.");
-        }
-      });      
-    </script>
+
   </body>
   <!-- <script src="js/button.js"></script> -->
   <!-- <script src="js/navFoot.js"></script> -->
